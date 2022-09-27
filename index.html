@@ -1,41 +1,45 @@
-<li><a href="http://example.com">example</a></li>
-	      <li><a href="https://example.com">example</a></li>
-	      <li><a href="ftp://sisadmin.ru/hranilishe/1.txt">Без авторизации</a></li>
-	      <li><a href="ftp://test:password@sisadmin.ru/hranilishe/1.txt">С авторизацией</a></li>
-	      <li><a href=“https://lavnik.net/gadgets/nexus-5x-obzor-dva-mesyatsa-ispolzovaniya#foto”>Примеры фотографий</a></li>
-	      <li><a href="#top">Ссылка на начало страницы</a></li>
-	      <li><a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя GET параметрами</a></li>
-	      <li><a href="#anchor">Начало страницы</a><a href="#"> Главная</a></li>
-	      <li><a>Ссылка без href</a> <!-- зачем --></li>
-	      <li><a href="">Ссылка с пустым href</a></li>
-	      <li><a href="https://blog.promopult.ru/seo/4-sluchaya-ispolzovaniya-noindex-i-nofollow.html" rel="nofollow">Ссылка nofollow</a></li>
-	      <li><a href="https://blog.promopult.ru/seo/4-sluchaya-ispolzovaniya-noindex-i-nofollow.html" rel="noindex">Ссылка noindex</a></li>
-	      <li><h3>Пример абзаца</h3>
-	        <p>
-	          <a href="https://www.lipsum.com/feed/html">Lorem ipsum</a>
-		 </p>
-	      </li>
-	      <li><a href="https://self-learning.ru/course/sql-basics?utm_source=infocomp&utm_medium=banner&utm_campaign=sqlbasics&utm_content=sidebar"><img src="image.gif" width="500" height="500" alt="flower"></a></li><li>
-	        <img src="image.gif" width="800" height="800" usemap="#navigation" alt="map">
-	        <map name="navigation">
-	          <area shape="circle"
-	          coords="400,400,200"
-	          href="https://www.php.net/manual/ru/book.json.php"
-	          alt="circle">
-	          <area shape="rect"
-	          coords="0,0,200,200"
-	          href="https://info-comp.ru/database-normalization"
-	          alt="rectangle">
-	        </map>
-	      </li>
-	      <li><a href="demo.html">Относительная ссылка на файл в том же каталоге</a></li>
-	      <li><a href="about/contacts.html">Относительная ссылка на файл в каталоге about</a></li>
-	      <li><a href="./image123.html">Относительная ссылка на файл в каталоге, выше нынешнего на один</a></li>
-	      <li><a href="././random.html">Относительная ссылка на файл двумя каталогами выше</a></li>
-	      <li><a href="/">Сокращенная ссылка на главную</a></li>
-	      <li><a href="/form.html">Сокращенная на внутреннюю</a></li>
-    </ol>
-
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+    	<title>Задание 1.</title>
+    </head>
+    <body>
+        <ol>
+            <li><a href="http://example.com">Абсолютная гиперссылка на главную страницу сайта;</a></li>
+            <li><a href="https://example.com">Абсолютная гиперссылка на главную сайта (https);</a></li>
+            <li><a href="ftp://example.com/text.txt">Ссылка на файл на сервере FTP без авторизации;</a></li>
+            <li><a href="ftp://user:someone@example.com/text.txt">Ссылка на файл на сервере FTP с авторизации;</a></li>
+            <li><a href="https://www.warframe.com/game#warframes">Ссылка на фрагмент страницы некоторого сайта;</a></li>
+            <li><a href="https://example.com/book#three">Ссылка на фрагмент текущей страницы;</a></li>
+            <li><a href="http://example.com?page=1&chapter=3">Ссылка с двумя параметрами в URL;</a></li>
+            <li> 
+                <ul>
+                    <li><a href="http://kubsu.ru" title="Главный сайт КубГу">КубГУ;</a></li>
+                    <li><a href="http://kubsu.ru/university" title="Университет">Университет;</a></li>
+                    <li><a href="http://kubsu.ru/studlife" title="Студентам">Студентам;</a></li>
+                    <li><a href="http://kubsu.ru/science" title="Наука">Наука;</a></li>   
+                </ul>
+            </li>
+            <li><a>ссылка без href;</a></li>
+            <li><a href>ссылка с пустым href;</a></li>
+            <li><a href="http://example.com" rel="nofollow">Ссылка с запрещёным переходом поисковикам;</a></li>
+            <li><a href="http://example.com" rel="noindex">Запрет для индексации поисковиками;</a></li>
+            <li><p><a href="http://exmaple.com">Контекстная ссылка</a></p></li>
+	    <li><a href="https://stom-mag.ru/id71017.php"><img src="https://img3.goodfon.ru/wallpaper/nbig/1/69/tyulpan-lepestki-listya-2902.jpg" height="100" alt="Picture"></a></li>
+            <li><img src="https://1.bp.blogspot.com/-XIOyUgVEDCA/WpWQzTXjfDI/AAAAAAAACOI/EBckB3czyukI83hbpD_Bw_jLR6Wm-aLwQCLcBGAs/s1600/Forget-Me-Not-Flower-HD.jpg" alt="flower" width="300" height="300" usemap="#flower"></li>
+            <map name="flower">
+                <area shape="circle" coords="200,200,50" href="https://yandex.ru/images/search?text=%D0%B3%D0%BE%D0%BB%D1%83%D0%B1%D1%8B%D0%B5%20%D1%86%D0%B2%D0%B5%D1%82%D1%8B&from=tabbar" alt="голубые-цветы" target="_blank">
+                <area shape="rect" coords="35,60,120,220" href="https://yandex.ru/images/search?text=%D1%80%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5%20%D1%86%D0%B2%D0%B5%D1%82%D1%8B&from=tabbar" alt="розовые-цветы" target="_blank">
+                </map>
+                       
+            <li><a href="index.html">Относительная ссылка на страницу в текущем каталоге;</a></li>
+            <li><a href="about/news.html">Относительная ссылка на страницу в каталоге about;</a></li>
+            <li><a href="../news.html">Относительная ссылка на страницу в каталоге уровнем выше текущего; </a></li>
+            <li><a href="../../news.html">Относительная ссылка на страницу в каталоге двумя уровнями выше;</a></li>
+            <li><a href="/main">Сокращенная ссылка на главную страницу;</a></li>
+            <li><a href="/internal">Сокращенная ссылка на внутреннюю страницу;</a></li>
+        </ol>
 
 	<form action="/" method="POST">
 
